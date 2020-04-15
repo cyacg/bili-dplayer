@@ -3463,7 +3463,7 @@
                     this.template.infoDuration.innerHTML = formatTime(this.player.video.duration),
                     this.player.options.danmaku && (this.template.infoDanmakuId.innerHTML = this.player.options.danmaku.id,
                     this.template.infoDanmakuApi.innerHTML = this.player.options.danmaku.api,
-                    this.template.infoDanmakuAmount.innerHTML = this.player.danmaku.dan.length - 2)
+                    this.template.infoDanmakuAmount.innerHTML = this.player.danmaku.dan.length)
                 }
             }, {
                 key: "fps",
