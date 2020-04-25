@@ -1720,7 +1720,9 @@
             o.danmaku && (t += '\n    <div class="cyloli-info-panel-item cyloli-info-panel-item-danmaku-id">\n        <span class="cyloli-info-panel-item-title">弹幕 ID</span>\n        <span class="cyloli-info-panel-item-data"></span>\n    </div>\n    <div class="cyloli-info-panel-item cyloli-info-panel-item-danmaku-api">\n        <span class="cyloli-info-panel-item-title">弹幕API</span>\n        <span class="cyloli-info-panel-item-data"></span>\n    </div>\n    <div class="cyloli-info-panel-item cyloli-info-panel-item-danmaku-amount">\n        <span class="cyloli-info-panel-item-title">弹幕数量</span>\n        <span class="cyloli-info-panel-item-data"></span>\n    </div>\n    '),
             t += '\n</div>\n<div class="cyloli-menu">\n    ',
             u(o.contextmenu, function(e, n) {
-                t += '\n        <div class="cyloli-menu-item">\n            <a href="',
+                t += '\n        <div class="cyloli-menu-item">\n            <a,
+                e.link && (a += ' target="_blank"'),
+                a += ' href="',
                 t += s(e.link || "javascript:void(0);"),
                 t += '">',
                 t += s(r(e.text)),
